@@ -1,0 +1,94 @@
+
+Project Name: Sash – HTML Admin & Dashboard Template.
+
+Version : V.11
+
+Updated-date:  07-July-2022 
+
+ 
+Updates :- 
+
+		1) New Ribbons page is added.
+		2) UI issues are fixed.
+		3) Form Advanced Page is updated.
+		4) Sidebar updated.
+
+***********************************************************************************************************************************************************************************************
+
+---------------------------------------------------------------------------------------------
+1) New Ribbons page is added.
+---------------------------------------------------------------------------------------------
+
+	1. Add ribbons.html page.
+	2. Replace complete scss folder. (assets/scss/)
+	3. Run gulp command after replacing the scss folder.
+
+---------------------------------------------------------------------------------------------
+2) UI issues are fixed.
+---------------------------------------------------------------------------------------------
+
+For scss users
+
+	Please replace below files in css folder :
+
+	  1. dark-style.scss           root---->(assets/css/dark-style.scss)
+	  2. skin-modes.scss           root---->(assets/css/skin-modes.scss)
+	  3. transparent-style.scss    root---->(assets/css/transparent-style.scss)
+	
+Note:- run the gulp command for above scss files after replacing 
+
+
+For css users
+
+	Please replace below files in css folder :
+
+	  1. dark-style.css           root---->(assets/css/dark-style.css)
+	  2. skin-modes.css           root---->(assets/css/skin-modes.css)
+	  3. transparent-style.css    root---->(assets/css/transparent-style.css)
+
+
+---------------------------------------------------------------------------------------------
+3) Form Advanced Page is updated.
+---------------------------------------------------------------------------------------------
+
+	Updated for Dropify file upload image is not display.
+
+---------------------------------------------------------------------------------------------
+4) Sidebar updated.
+---------------------------------------------------------------------------------------------
+
+	Replace Sidebar section in all HTML pages. When we click on the links in the chat tab get console issue so updated sidebar section.
+
+
+Thanking you,
+@spruko.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

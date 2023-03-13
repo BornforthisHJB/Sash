@@ -1,0 +1,338 @@
+
+Project Name: Sash – HTML Admin & Dashboard Template.
+
+Version : V.12
+
+Updated-date:  17-November-2022 
+ 
+Updates :- 
+
+ 1) Ui issues are Fixed and Improved.
+ 2) Dark-styles, Transparent-styles,Skin-modes,Colors are merged in to scss folder.
+ 3) Doublemenu and Doublemenu with tabs for vertical Menu and centerlogo for horizontal Menu are added in switcher.
+ 4) Plugins and Main style sheet are divided into individual files in scss folder.
+ 5) Unwanted Plugins are removed and plugins are updated to newer version.
+ 6) Js files are updated and custom-switcher.js is added.
+ 7) Theme Layout Icon is added to responsive.
+ 8) Rtl file in scss is improved.
+ 9) Sidemenu Folder in scss and plugins is improved.
+ 10) All shorthand properties are used for template.
+ 11) Right sidebar is changed.
+ 12) Switcher js is moved from custom.js to custom-swicher.js.
+ 13) Documentation and gulp file is updated.
+ 14) w3c validation is done.
+ 15) submenus are added for landing page.
+
+***********************************************************************************************************************************************************************************************
+
+---------------------------------------------------------------------------------------------
+1) Ui issues are Fixed and Improved.
+---------------------------------------------------------------------------------------------
+
+For Ui improments and issues fixing
+
+	Please replace complete assets folder :
+	
+Note:- run the gulp command after replacing 
+
+---------------------------------------------------------------------------------------------
+2) Dark-styles, Transparent-styles,Skin-modes,Colors are merged in to scss folder.
+---------------------------------------------------------------------------------------------
+dark,transparent,skinmodes,colors are merged into scss Folder (root:-assets/scss/layouts)
+
+so Please replace  css and scss folders 
+
+Note:- run the gulp command after replacing .
+
+------------------------------------------------------------------------------------------------------------------
+3) Doublemenu and Doublemenu with tabs for vertical Menu and centerlogo for horizontal Menu are added in switcher.
+------------------------------------------------------------------------------------------------------------------
+
+Refer Documentaion for adding double menu double menu with tabs and centerlogo.and replace sidemenu js in plugins folder (root:- assets/plugins/sidemenu)
+
+
+------------------------------------------------------------------------------------------------------------------
+4) Plugins and Main style sheet are divided into individual files in scss folder.
+------------------------------------------------------------------------------------------------------------------
+**********
+step-1:-
+**********
+
+for scss users:-
+
+plugins.scss file is created and imported all plugins scss and removed from style.scss file in scss folder.
+so,replace complete scss folder.
+
+Note:- run the gulp command after replacing .
+
+for css users:-
+
+plugins.css file is added and removed plugins css from style.css so please replace complete css folder
+
+**********
+step-2:-
+**********
+After completing the above step-1 please add plugins.css link in all html pages.
+
+before:-
+	<!-- STYLE CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet" />
+
+after:-
+	<!-- STYLE CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet" />
+
+	<!-- Plugins CSS -->
+	<link href="../assets/css/plugins.css" rel="stylesheet" />
+
+
+--------------------------------------------------------------------------
+5) Unwanted Plugins are removed and plugins are updated to newer version.
+--------------------------------------------------------------------------
+
+unwanted plugins are removed and updated .so, replace complete plugins folder.
+
+--------------------------------------------------------------------------
+6) Js files are updated and custom-switcher.js is added.
+--------------------------------------------------------------------------
+some js files are updated and added .so,replace below mentioned files:
+
+replace:-
+
+1)chart.js
+2)custom.js
+3)index.js
+4)index-1.js
+5)themeColor.js
+
+Added:- 
+
+1)custom-switcher.js
+
+--------------------------------------------------------------------------
+7) Theme Layout Icon is added to responsive.
+--------------------------------------------------------------------------
+remove below css form scss and css for theme layout in responsive 
+
+@media (max-width: 576px) {
+	.responsive-navbar .theme-layout.nav-link-bg.layout-setting {
+		display: none;
+	}
+}
+
+Note:- run the gulp command after removing .
+
+--------------------------------------------------------------------------
+8) Rtl file in scss is improved.
+--------------------------------------------------------------------------
+by using short hand properties in template there is no need of rewriting styles for rtl so, unwanted styles are removed from rtl and simplified .
+so,replace complete assets folder.
+
+--------------------------------------------------------------------------
+9) sidemenu Folder in scss and plugins is improved.
+--------------------------------------------------------------------------
+replace complete sidemenu folder in scss folder(assets/scss/sidemenu) and replace sidemenu folder in plugins (assets/plugins/sidemenu).
+
+--------------------------------------------------------------------------
+10) All shorthand properties are used for template.
+--------------------------------------------------------------------------
+short hand properties are used in template for css and scss .so,replace complete scss folder
+
+--------------------------------------------------------------------------
+11) Right sidebar is changed.
+--------------------------------------------------------------------------
+replace  sidebar-right in all html pages if you are using newer sidemenu .
+
+--------------------------------------------------------------------------
+12) Switcher js is moved from custom.js to custom-swicher.js
+--------------------------------------------------------------------------
+replace custom.js file and add custom-switcher .js file in js.
+
+After replacing please add custom-switcher.js link in all html pages.
+
+before:-
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
+
+after:-
+	 <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
+
+    <!-- Custom-switcher -->
+    <script src="../assets/js/custom-swicher.js"></script>
+
+--------------------------------------------------------------------------
+ 13) Documentation and gulp file is updated.
+ --------------------------------------------------------------------------
+documentation and gulp file is updated so please go through it.
+
+--------------------------------------------------------------------------
+14) w3c validation is done.
+--------------------------------------------------------------------------
+w3c validations are done and changed some html pages according to validation rules.
+
+---------------------------------------------------------------------------------------------
+15) Submenus are added for landing page.
+---------------------------------------------------------------------------------------------
+To add Submenu For Landing Page please replace below html css and js mentioned :-
+
+**********
+HTML :- 
+**********
+
+replace below sidebar in landing.html
+
+<div class="top sticky">
+	<!--APP-SIDEBAR-->
+	<div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+	<div class="app-sidebar bg-transparent horizontal-main">
+		<div class="container">
+			<div class="row">
+				<div class="main-sidemenu navbar px-0">
+					<a class="navbar-brand ps-0 d-none d-lg-block" href="index.html">
+						<img alt="" class="logo-2" src="../assets/images/brand/logo-3.png">
+						<img src="../assets/images/brand/logo.png" class="logo-3" alt="logo">
+					</a>
+					<ul class="side-menu">
+						<li class="slide">
+							<a class="side-menu__item active" data-bs-toggle="slide" href="#home"><span
+									class="side-menu__label">Home</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-bs-toggle="slide" href="#Features"><span
+									class="side-menu__label">Features</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-bs-toggle="slide" href="#About"><span
+									class="side-menu__label">About</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-bs-toggle="slide" href="#Faqs"><span
+									class="side-menu__label">Faq's</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-bs-toggle="slide" href="#Blog"><span
+									class="side-menu__label">Blog</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-bs-toggle="slide" href="#Clients"><span
+									class="side-menu__label">Clients</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-bs-toggle="slide" href="#Contact"><span
+									class="side-menu__label">Contact</span></a>
+						</li>
+						<li class="slide"> 
+							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+								<span class="side-menu__label">Submenu items</span><i class="angle fe fe-chevron-right"></i></a>
+							<ul class="slide-menu">
+								<li class="side-menu-label1"><a href="javascript:void(0)">Submenu
+										items</a></li>
+								<li><a href="javascript:void(0)" class="slide-item">Submenu-1</a></li>
+								<li class="sub-slide"> <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span class="sub-side-menu__label">Submenu-2</span><i class="sub-angle fe fe-chevron-right"></i></a>
+									<ul class="sub-slide-menu">
+										<li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.1</a></li>
+										<li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.2</a></li>
+										<li class="sub-slide2"> <a class="sub-side-menu__item2" href="javascript:void(0)" data-bs-toggle="sub-slide2"><span class="sub-side-menu__label2">Submenu-2.3</span><i class="sub-angle2 fe fe-chevron-right"></i></a>
+											<ul class="sub-slide-menu2">
+												<li><a href="javascript:void(0)" class="sub-slide-item2">Submenu-2.3.1</a></li>
+												<li><a href="javascript:void(0)" class="sub-slide-item2">Submenu-2.3.2</a></li>
+												<li><a href="javascript:void(0)" class="sub-slide-item2">Submenu-2.3.3</a></li>
+											</ul>
+										</li>
+										<li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.4</a></li>
+										<li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.5</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="header-nav-right d-none d-lg-flex">
+						<a href="register.html"
+							class="btn ripple btn-min w-sm btn-outline-primary me-2 my-auto d-lg-none d-xl-block d-block"
+							target="_blank">New User
+						</a>
+						<a href="login.html" class="btn ripple btn-min w-sm btn-primary me-2 my-auto d-lg-none d-xl-block d-block"
+							target="_blank">Login
+						</a>
+						<div class="demo-icon nav-link icon">
+							<i class="fe fe-settings fa-spin  text_primary"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/APP-SIDEBAR-->
+</div>
+
+**********
+SCSS :-
+**********
+please add below scss in landing.scss (root :- assets/scss/custom/_landing.scss)
+
+	.landing-top-header {
+		.main-sidemenu {
+			overflow: inherit !important;
+		}
+
+		@media (max-width: 991px) {
+			.side-menu {
+				width: 100% !important;
+			}
+
+		}
+	}
+
+	.landing-page.app.sidenav-toggled .app-sidebar {
+		inset-inline-start: 0 !important;
+	}
+
+	@media (min-width: 1276px) {
+
+		.landing-page.horizontal .hor-header .container,
+		.landing-page.horizontal .horizontal-main .container,
+		.landing-page.horizontal .main-content.hor-content .container {
+			max-width: 1200px !important;
+		}
+	}
+
+Note:- run the gulp command after replacing .
+
+**********
+js:- 
+*********
+please replace landing.js file in js folder (root:-assets/js/landing.js)
+
+Thanking you,
+@spruko.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
